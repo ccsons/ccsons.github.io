@@ -33,3 +33,4 @@ nav ul {
 nav ul li:not(:last-child)::after {
     content: " |"
 }
+
