@@ -5,6 +5,7 @@
 a {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -18,7 +19,7 @@ nav {
     max-width: 95ch;
 }
 
-nav ul .active {
+nav .active {
     font-weight:bold;
 }
 
@@ -28,6 +29,7 @@ nav ul {
     flex-direction: row;
     justify-content: end;
 }
+
 nav ul li:not(:last-child)::after {
     content: " |"
 }
