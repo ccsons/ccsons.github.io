@@ -12,20 +12,22 @@ a:hover {
 nav {
     margin: 0 auto;
     padding: 0;
-    text-align: center;
-    max-width: 128ch;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95ch;
 }
 
 nav ul .active {
     font-weight:bold;
 }
-nav ul li:first-child { float: left; }
 
-nav ul li {
-    display: inline;
-    float: right;
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: end;
 }
-
-nav ul li:not(:nth-child(-n+2))::after {
-    content: ' |';
+nav ul li:not(:last-child)::after {
+    content: " |"
 }
