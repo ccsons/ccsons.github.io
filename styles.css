@@ -1,6 +1,29 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
 }
+@media (prefers-color-scheme: light) {
+
+    body {
+        color: #00001c;
+        background-color: #ffeedd;
+    }
+
+    a {
+        color: #0022cc
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        color: #ffeedd;
+        background-color: #00001c;
+    }
+
+    a {
+        color: #00ccff
+    }
+}
 
 a {
     text-decoration: none;
